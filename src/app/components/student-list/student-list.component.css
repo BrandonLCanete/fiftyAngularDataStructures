@@ -1,0 +1,12 @@
+.btn-primary:hover{
+    background-color: var(--bs-success);
+}
+.primary:hover{
+    background-color: var(--bs-primary);
+}
+.sucess:hover{
+    background-color: var(--bs-success);
+}
+.danger:hover{
+    background-color: var(--bs-danger);
+}

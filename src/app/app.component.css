@@ -1,0 +1,11 @@
+.btn-dark a{
+    text-decoration: none;
+    color: var(--bs-white);
+}
+.btn-dark:hover {
+    background-color: var(--bs-primary);
+}
+.border-danger {
+    border: solid 2px;
+}
+

@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h1>Student List</h1>
+            <input type="text" placeholder="Enter Student Name" [(ngModel)]="name">
+            &nbsp;
+            <input type="number" placeholder="Enter Student Grade" [(ngModel)]="grade">
+            &nbsp;
+            <input type="number" placeholder="Enter Student LRN" [(ngModel)]="lrn">
+            &nbsp;
+            <input type="text"  placeholder="Enter Student Address" [(ngModel)]="address">
+            &nbsp;
+            <select [(ngModel)]="sex">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            &nbsp;
+            <button class="btn btn-primary" (click)="Add()">Add Student</button>
+                <ul class="list-unstyled p-0 list-group">
+                    <li *ngFor="let student of studenList; let index = index" class="text-dark bg-info mt-3 p-3 list-group-item">
+                    <h5>{{index + 1}}&nbsp;&nbsp;Name: {{student.Name}}&nbsp;&nbsp;Grade: {{student.Grade}}&nbsp;&nbsp;LRN: {{student.LRN}}&nbsp;&nbsp;Address: {{student.Address}}&nbsp;&nbsp;Sex: {{student.Sex}}</h5>
+                    &nbsp;
+                    <button class="btn btn-dark sucess" (click)="Edit(index)">Edit</button>
+                    &nbsp;
+                    <button class="btn btn-dark danger" (click)="Delete(index)">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container" *ngIf="editIndex!==null" >
+    <div class="row">
+        <div class="col-sm">
+            <h1>Edit Student</h1>
+            <input type="text" placeholder="Edit Student Name" [(ngModel)]="editName">
+            &nbsp;
+            <input type="text" placeholder="Edit Student Grade" [(ngModel)]="editGrade">
+            &nbsp;
+            <input type="text" placeholder="Edit Student LRN" [(ngModel)]="editLRN">
+            &nbsp;
+            <input type="text" placeholder="Edit Student Address" [(ngModel)]="editAddress">
+            &nbsp;
+            <select [(ngModel)]="editSex">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            &nbsp;
+            <button class="btn btn-primary" (click)="Save()">Save</button>
+        </div>
+    </div>
+</div>
+
+

@@ -6,9 +6,11 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AppComponent} from "./app.component";
 import {provideAnimationsAsync} from "@angular/platform-browser/animations/async";
 import { FormsModule } from '@angular/forms';
+import { StudentListComponent } from './components/student-list/student-list.component';
 
 const routes: Routes = [
-    {path: '', component: AppComponent},
+    {path: ' ', component: AppComponent},
+    {path: 'student-list', component: StudentListComponent},
 ];
 
 @NgModule({
@@ -21,6 +23,7 @@ const routes: Routes = [
     ],
     declarations: [
         AppComponent,
+        StudentListComponent,
     ],
     providers: [
         provideAnimationsAsync(),
