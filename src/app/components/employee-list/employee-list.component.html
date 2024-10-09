@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h1>Employee List</h1>
+            <br>
+            <input type="text" placeholder="Enter Employee Name" [(ngModel)]="name">
+            &nbsp;
+            <input type="text" placeholder="Enter Employee Position" [(ngModel)]="position">
+            &nbsp;
+            <input type="text" placeholder="Enter Employee Department" [(ngModel)]="department">
+            &nbsp;
+            <input type="email"  placeholder="Enter Employee Email Address" [(ngModel)]="email">
+            &nbsp;
+            <input type="number" placeholder="Enter Employee Salary" [(ngModel)]="salary">
+            &nbsp;
+            <input type="text" placeholder="Enter Employee Birthday" [(ngModel)]="birthday">
+            &nbsp;
+            <input type="text" placeholder="Enter Employee Address" [(ngModel)]="address">
+            &nbsp;
+            <select [(ngModel)]="sex">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            &nbsp;
+            <button class="btn btn-primary" (click)="Add()">Add Student</button>
+                <ul class="list-unstyled p-0 list-group">
+                    <li *ngFor="let employee of employee; let index = index" class="text-dark bg-info mt-3 p-3 list-group-item">
+                    <h5>{{index + 1}}&nbsp;&nbsp;Name: {{employee.Name}}&nbsp;&nbsp;Position: {{employee.Position}}&nbsp;&nbsp;Department: {{employee.Department}}&nbsp;&nbsp;Email Address: {{employee.Email}}&nbsp;&nbsp;Salary: {{employee.Salary}}&nbsp;&nbsp;Birthday: {{employee.Birthday}}&nbsp;&nbsp;Address: {{employee.Address}}&nbsp;&nbsp; Sex: {{employee.Sex}}</h5>
+                    &nbsp;
+                    <button class="btn btn-dark sucess" (click)="Edit(index)">Edit</button>
+                    &nbsp;
+                    <button class="btn btn-dark danger" (click)="Delete(index)">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container" *ngIf="editIndex!==null" >
+    <div class="row">
+        <div class="col-sm">
+            <h1>Edit Employee Details</h1>
+            <input type="text" placeholder="Edit Employee Name" [(ngModel)]="editName">
+            &nbsp;
+            <input type="text" placeholder="Edit Employee Position" [(ngModel)]="editPosition">
+            &nbsp;
+            <input type="text" placeholder="Edit Employee Department" [(ngModel)]="editDepartment">
+            &nbsp;
+            <input type="email" placeholder="Edit Employee Email" [(ngModel)]="editEmail">
+            &nbsp;
+            <input type="number" placeholder="Edit Employee Salary" [(ngModel)]="editSalary">
+            &nbsp;
+            <input type="text" placeholder="Edit Employee Birthday" [(ngModel)]="editBirthday">
+            &nbsp;
+            <input type="text" placeholder="Edit Employee Address" [(ngModel)]="editAddress">
+            &nbsp;
+            <select [(ngModel)]="editSex">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            &nbsp;
+            <button class="btn btn-primary" (click)="Save()">Save</button>
+        </div>
+    </div>
+</div>
+
+
+
