@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h1>Car Model List</h1>
+            <input type="text" placeholder="Enter Car Model Name" [(ngModel)]="car">
+            &nbsp;
+            <button class="btn btn-primary" (click)="Add()">Add Car Model Name</button>
+                <ul class="list-unstyled p-0 list-group">
+                    <li *ngFor="let cars of carList; let index = index" class="text-dark bg-info mt-3 p-3 list-group-item">
+                    <h5>{{index + 1}}&nbsp;&nbsp;Car Model Name: {{cars}}</h5>
+                    &nbsp;
+                    <button class="btn btn-dark danger" (click)="Delete(index)">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

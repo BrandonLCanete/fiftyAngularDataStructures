@@ -13,6 +13,7 @@ import { CourseListComponent } from './components/course-list/course-list.compon
 import { BookListComponent } from './components/book-list/book-list.component';
 import { CityListComponent } from './components/city-list/city-list.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
+import { CarModelListComponent } from './components/car-model-list/car-model-list.component';
 
 const routes: Routes = [
     {path: ' ', component: AppComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
     {path: 'book-list', component: BookListComponent},
     {path: 'city-list', component: CityListComponent},
     {path: 'movie-list', component: MovieListComponent},
+    {path: 'car-model-list', component: CarModelListComponent},
 ];
 
 @NgModule({
@@ -42,6 +44,7 @@ const routes: Routes = [
         BookListComponent,
         CityListComponent,
         MovieListComponent,
+        CarModelListComponent,
     ],
     providers: [
         provideAnimationsAsync(),
