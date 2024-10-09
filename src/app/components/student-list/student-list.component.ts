@@ -41,6 +41,11 @@ export class StudentListComponent {
               Address : this.address,
               Sex : this.sex
             });
+            this.name = "";
+            this.grade = 0;
+            this.lrn = 0;
+            this.address = "";
+            this.sex = "";
           }
       }
       // Edit Function

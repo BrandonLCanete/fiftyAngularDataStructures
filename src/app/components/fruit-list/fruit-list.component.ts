@@ -18,6 +18,7 @@ export class FruitListComponent {
        if(this.fruit.trim()){
           this.fruitList.push(this.fruit);
        }
+       this.fruit = "";
     }
 
     // Delete Function

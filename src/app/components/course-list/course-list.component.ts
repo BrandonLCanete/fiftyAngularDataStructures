@@ -19,6 +19,7 @@ export class CourseListComponent {
       if(this.course.trim()){
         this.courseList.push(this.course);
       }
+      this.course = "";
     }
 
     // Delete Functio

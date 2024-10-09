@@ -19,6 +19,7 @@ export class BookListComponent {
      if(this.book.trim()){
        this.bookList.push(this.book);
      }
+     this.book = "";
    }
 
    // Delete Function

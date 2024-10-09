@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h1>City List</h1>
+            <input type="text" placeholder="Enter City Name" [(ngModel)]="city">
+            &nbsp;
+            <button class="btn btn-primary" (click)="Add()">Add City</button>
+                <ul class="list-unstyled p-0 list-group">
+                    <li *ngFor="let cities of cityList; let index = index" class="text-dark bg-info mt-3 p-3 list-group-item">
+                    <h5>{{index + 1}}&nbsp;&nbsp;City Name: {{cities}}</h5>
+                    &nbsp;
+                    <button class="btn btn-dark danger" (click)="Delete(index)">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

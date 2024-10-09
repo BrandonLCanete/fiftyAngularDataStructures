@@ -51,6 +51,14 @@ export class EmployeeListComponent {
             Address : this.address,
             Sex : this.sex
          });
+         this.name = "";
+         this.position = "";
+         this.department = "";
+         this.email = "";
+         this.salary = 0;
+         this.birthday = "";
+         this.address = "";
+         this.sex = "";
       }
     }
 
