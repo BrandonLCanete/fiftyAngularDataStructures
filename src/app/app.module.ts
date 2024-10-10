@@ -38,6 +38,7 @@ import { LaptopListComponent } from './components/laptop-list/laptop-list.compon
 import { LaptopSpecificationsListComponent } from './components/laptop-specifications-list/laptop-specifications-list.component';
 import { ComputerHardwareListComponent } from './components/computer-hardware-list/computer-hardware-list.component';
 import { MobileAppListComponent } from './components/mobile-app-list/mobile-app-list.component';
+import { VideoListComponent } from './components/video-list/video-list.component';
 
 const routes: Routes = [
     {path: ' ', component: AppComponent},
@@ -73,6 +74,7 @@ const routes: Routes = [
     {path: 'laptop-specifications-list', component: LaptopSpecificationsListComponent},
     {path: 'computer-hardware-list', component: ComputerHardwareListComponent},
     {path: 'mobile-app-list', component: MobileAppListComponent},
+    {path: 'video-list', component: VideoListComponent},
 ];
 
 @NgModule({
@@ -117,6 +119,7 @@ const routes: Routes = [
         LaptopSpecificationsListComponent,
         ComputerHardwareListComponent,
         MobileAppListComponent,
+        VideoListComponent,
     ],
     providers: [
         provideAnimationsAsync(),
