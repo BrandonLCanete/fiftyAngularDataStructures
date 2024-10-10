@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class LaptopListComponent {
 
     // List of Laptops
-    LaptopList: string[] = ["Microsoft Surface","Apple Macbook","Acer","Asus"];
+    LaptopList: string[] = ["Surface Laptop Go 3","Apple M3 Pro","Predator Helios 16 PH16-72-96H6 PRO Black","14.0 ASUS X415 (11th Gen Intel)"];
 
     // Variable
     Laptop: string = "";
