@@ -32,6 +32,7 @@ import { ClassroomListComponent } from './components/classroom-list/classroom-li
 import { InventoryListComponent } from './components/inventory-list/inventory-list.component';
 import { LectureListComponent } from './components/lecture-list/lecture-list.component';
 import { StationeryListComponent } from './components/stationery-list/stationery-list.component';
+import { FlowerListComponent } from './components/flower-list/flower-list.component';
 
 const routes: Routes = [
     {path: ' ', component: AppComponent},
@@ -61,6 +62,7 @@ const routes: Routes = [
     {path: 'inventory-list',component: InventoryListComponent},
     {path: 'lecture-list', component: LectureListComponent},
     {path: 'stationery-list', component: StationeryListComponent},
+    {path: 'flower-list',component: FlowerListComponent},
 ];
 
 @NgModule({
@@ -99,6 +101,7 @@ const routes: Routes = [
         InventoryListComponent,
         LectureListComponent,
         StationeryListComponent,
+        FlowerListComponent,
     ],
     providers: [
         provideAnimationsAsync(),
