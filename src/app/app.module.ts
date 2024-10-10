@@ -25,6 +25,7 @@ import { LanguageListComponent } from './components/language-list/language-list.
 import { GameListComponent } from './components/game-list/game-list.component';
 import { SoftwareListComponent } from './components/software-list/software-list.component';
 import { PhoneContactListComponent } from './components/phone-contact-list/phone-contact-list.component';
+import { MusicPlaylistComponent } from './components/music-playlist/music-playlist.component';
 
 const routes: Routes = [
     {path: ' ', component: AppComponent},
@@ -47,6 +48,7 @@ const routes: Routes = [
     {path: 'game-list', component: GameListComponent},
     {path: 'software-list', component: SoftwareListComponent},
     {path: 'phone-contact-list', component: PhoneContactListComponent},
+    {path: 'music-playlist', component: MusicPlaylistComponent},
 ];
 
 @NgModule({
@@ -78,6 +80,7 @@ const routes: Routes = [
         GameListComponent,
         SoftwareListComponent,
         PhoneContactListComponent,
+        MusicPlaylistComponent,
     ],
     providers: [
         provideAnimationsAsync(),

@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h1>Music Play List</h1>
+            <input type="text" placeholder="Enter Music Name" [(ngModel)]="Name">
+            &nbsp;
+            <input type="text" placeholder="Enter Artist Name" [(ngModel)]="Artist">
+            &nbsp;
+            <button class="btn btn-primary" (click)="Add()">Add Music</button>
+                <ul class="list-unstyled p-0 list-group">
+                    <li *ngFor="let Musics of MusicList; let index = index" class="text-dark bg-info mt-3 p-3 list-group-item">
+                    <h5>{{index + 1}}&nbsp;&nbsp;Music Name: {{Musics.Name}}&nbsp;&nbsp;Music Artist Name: {{Musics.Artist}}</h5>
+                    &nbsp;
+                    <button class="btn btn-dark danger" (click)="Delete(index)">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
