@@ -16,7 +16,7 @@ export class InventoryListComponent {
       {Name: "Sugar", Quantity: "20kg"}
     ];
 
-    // Variable
+    // Variables
     Name: string = "";
     Quantity: string = "";
 
