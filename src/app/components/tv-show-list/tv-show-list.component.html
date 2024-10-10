@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h1>TV Show List</h1>
+            <input type="text" placeholder="Enter TV Show Name" [(ngModel)]="Show">
+            &nbsp;
+            <button class="btn btn-primary" (click)="Add()">Add TV Show</button>
+                <ul class="list-unstyled p-0 list-group">
+                    <li *ngFor="let Shows of ShowList; let index = index" class="text-dark bg-info mt-3 p-3 list-group-item">
+                    <h5>{{index + 1}}&nbsp;&nbsp;TV Show Name: {{Shows}}</h5>
+                    &nbsp;
+                    <button class="btn btn-dark danger" (click)="Delete(index)">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
