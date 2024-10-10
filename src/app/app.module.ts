@@ -27,6 +27,7 @@ import { SoftwareListComponent } from './components/software-list/software-list.
 import { PhoneContactListComponent } from './components/phone-contact-list/phone-contact-list.component';
 import { MusicPlaylistComponent } from './components/music-playlist/music-playlist.component';
 import { FoodMenuComponent } from './components/food-menu/food-menu.component';
+import { GroceryListComponent } from './components/grocery-list/grocery-list.component';
 
 const routes: Routes = [
     {path: ' ', component: AppComponent},
@@ -51,6 +52,7 @@ const routes: Routes = [
     {path: 'phone-contact-list', component: PhoneContactListComponent},
     {path: 'music-playlist', component: MusicPlaylistComponent},
     {path: 'food-menu', component: FoodMenuComponent},
+    {path: 'grocery-list',component: GroceryListComponent},
 ];
 
 @NgModule({
@@ -84,6 +86,7 @@ const routes: Routes = [
         PhoneContactListComponent,
         MusicPlaylistComponent,
         FoodMenuComponent,
+        GroceryListComponent,
     ],
     providers: [
         provideAnimationsAsync(),
