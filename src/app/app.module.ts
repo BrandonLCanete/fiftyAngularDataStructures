@@ -37,6 +37,7 @@ import { DestinationListComponent } from './components/destination-list/destinat
 import { LaptopListComponent } from './components/laptop-list/laptop-list.component';
 import { LaptopSpecificationsListComponent } from './components/laptop-specifications-list/laptop-specifications-list.component';
 import { ComputerHardwareListComponent } from './components/computer-hardware-list/computer-hardware-list.component';
+import { MobileAppListComponent } from './components/mobile-app-list/mobile-app-list.component';
 
 const routes: Routes = [
     {path: ' ', component: AppComponent},
@@ -71,6 +72,7 @@ const routes: Routes = [
     {path: 'laptop-list', component: LaptopListComponent},
     {path: 'laptop-specifications-list', component: LaptopSpecificationsListComponent},
     {path: 'computer-hardware-list', component: ComputerHardwareListComponent},
+    {path: 'mobile-app-list', component: MobileAppListComponent},
 ];
 
 @NgModule({
@@ -114,6 +116,7 @@ const routes: Routes = [
         LaptopListComponent,
         LaptopSpecificationsListComponent,
         ComputerHardwareListComponent,
+        MobileAppListComponent,
     ],
     providers: [
         provideAnimationsAsync(),
