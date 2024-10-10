@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h1>Laptop List</h1>
+            <input type="text" placeholder="Enter Laptop Name" [(ngModel)]="Laptop">
+            &nbsp;
+            <button class="btn btn-primary" (click)="Add()">Add Laptop</button>
+                <ul class="list-unstyled p-0 list-group">
+                    <li *ngFor="let Laptops of LaptopList; let index = index" class="text-dark bg-info mt-3 p-3 list-group-item">
+                    <h5>{{index + 1}}&nbsp;&nbsp;Laptop Name: {{Laptops}}</h5>
+                    &nbsp;
+                    <button class="btn btn-dark danger" (click)="Delete(index)">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
