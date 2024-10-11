@@ -54,6 +54,7 @@ import { PresentationListComponent } from './components/presentation-list/presen
 import { TourListComponent } from './components/tour-list/tour-list.component';
 import { EventListComponent } from './components/event-list/event-list.component';
 import { DeveloperToolsListComponent } from './components/developer-tools-list/developer-tools-list.component';
+import { FrameworkListComponent } from './components/framework-list/framework-list.component';
 
 const routes: Routes = [
     {path: ' ', component: AppComponent},
@@ -105,6 +106,7 @@ const routes: Routes = [
     {path: 'tour-list', component: TourListComponent},
     {path: 'event-list', component: EventListComponent},
     {path: 'developer-tools-list', component: DeveloperToolsListComponent},
+    {path: 'framework-list', component: FrameworkListComponent},
 ];
 
 @NgModule({
@@ -165,6 +167,7 @@ const routes: Routes = [
         TourListComponent,
         EventListComponent,
         DeveloperToolsListComponent,
+        FrameworkListComponent,
     ],
     providers: [
         provideAnimationsAsync(),
