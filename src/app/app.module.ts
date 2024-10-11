@@ -50,6 +50,7 @@ import { PodcastListComponent } from './components/podcast-list/podcast-list.com
 import { ExerciseListComponent } from './components/exercise-list/exercise-list.component';
 import { MealPlanListComponent } from './components/meal-plan-list/meal-plan-list.component';
 import { BudgetListComponent } from './components/budget-list/budget-list.component';
+import { PresentationListComponent } from './components/presentation-list/presentation-list.component';
 
 const routes: Routes = [
     {path: ' ', component: AppComponent},
@@ -97,6 +98,7 @@ const routes: Routes = [
     {path: 'exercise-list', component: ExerciseListComponent},
     {path: 'meal-plan-list', component: MealPlanListComponent},
     {path: 'budget-list', component: BudgetListComponent},
+    {path: 'presentation-list', component: PresentationListComponent},
 ];
 
 @NgModule({
@@ -153,6 +155,7 @@ const routes: Routes = [
         ExerciseListComponent,
         MealPlanListComponent,
         BudgetListComponent,
+        PresentationListComponent,
     ],
     providers: [
         provideAnimationsAsync(),
