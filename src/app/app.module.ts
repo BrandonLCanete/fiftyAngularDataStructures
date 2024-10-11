@@ -43,6 +43,7 @@ import { TvShowListComponent } from './components/tv-show-list/tv-show-list.comp
 import { FurnitureListComponent } from './components/furniture-list/furniture-list.component';
 import { AccessoryListComponent } from './components/accessory-list/accessory-list.component';
 import { BuildingListComponent } from './components/building-list/building-list.component';
+import { PaintingListComponent } from './components/painting-list/painting-list.component';
 
 const routes: Routes = [
     {path: ' ', component: AppComponent},
@@ -83,6 +84,7 @@ const routes: Routes = [
     {path: 'furniture-list', component: FurnitureListComponent},
     {path: 'accessory-list', component: AccessoryListComponent},
     {path: 'building-list', component: BuildingListComponent},
+    {path: 'painting-list', component: PaintingListComponent},
 ];
 
 @NgModule({
@@ -132,6 +134,7 @@ const routes: Routes = [
         FurnitureListComponent,
         AccessoryListComponent,
         BuildingListComponent,
+        PaintingListComponent,
     ],
     providers: [
         provideAnimationsAsync(),
