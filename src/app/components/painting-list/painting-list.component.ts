@@ -17,7 +17,7 @@ export class PaintingListComponent {
         {Painting: "Café Terrace at Night", Artist: "Vincent van Gogh", Year: 1888}
       ];
 
-      // Variable
+      // Variables
       Painting: string = "";
       Artist: string = "";
       Year: number = 0;

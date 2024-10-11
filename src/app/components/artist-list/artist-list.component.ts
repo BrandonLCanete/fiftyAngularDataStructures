@@ -17,7 +17,7 @@ export class ArtistListComponent {
       {Artist: "Vincent van Gogh", Year: "1853–1890"}
     ];
 
-    // Variable
+    // Variables
     Artist: string = "";
     Year: string = "";
 
